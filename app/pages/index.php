@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="/assets/images/White_Butterfly.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <link href="./output.css" rel="stylesheet">
+    <link href="../../public/css/output.css" rel="stylesheet">
     <title>Chrysalis - Sua loja preferida</title>
     <style>
         @keyframes butterfly-flying {
@@ -35,16 +35,23 @@
             animation-iteration-count: infinite;
         }
     </style>
+
 </head>
 
 <body>
     <?php
-    include("header.php");
+    include('conexao.php');
+    $sql = "SELECT * FROM produto DESC";
+    $result = $conexao->query($sql);
+    echo ($result);
+    ?>
+    <?php
+    include('header.php');
     ?>
     <main>
         <div id="alerts" class="text-white mx-auto text-center py-4" style="background-color: rgb(24, 24, 24);">
-            <span class="mx-4">DESCONTOS IMPERDÍVEIS</span>
-            <span class="mx-4">ROUPAS DE QUALIDADE</span>
+            <span class="mx-4 hover:scale-105 transition-all">DESCONTOS IMPERDÍVEIS</span>
+            <span class="mx-4 hover:scale-105 transition-all">ROUPAS DE QUALIDADE</span>
         </div>
         <div id="default-carousel" class="relative w-full" data-carousel="slide">
             <!-- Carousel wrapper -->
@@ -109,15 +116,7 @@
         <section class="container mx-auto px-8 my-4">
             <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                 <?php
-                include("card.php");
-                include("card.php");
-                include("card.php");
-                include("card.php");
-                include("card.php");
-                include("card.php");
-                include("card.php");
-                include("card.php");
-
+                include('card.php');
                 ?>
 
             </section>

@@ -4,15 +4,12 @@
 <head>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
-
-
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="shortcut icon" href="/assets/images/White_Butterfly.png" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
-  <link href="./output.css" rel="stylesheet">
+  <link href="../../public/css/output.css" rel="stylesheet">
   <title>Chrysalis - Sua loja preferida</title>
   <style>
     @keyframes butterfly-flying {
@@ -40,7 +37,6 @@
     }
   </style>
 </head>
-
 <body class="bg-white text-gray-900">
   <?php
   include("header.php");
@@ -74,7 +70,6 @@
               <button class="py-2 px-4 text-black rounded-full border-2 border-yellow-700 hover:bg-orange-500 transition duration-300">GG</button>
             </div>
           </div>
-
           <!-- Opções de Entrega -->
           <div class="mt-6">
             <h2 class="text-lg font-semibold text-start md:text-left">Opções de Entrega:</h2>

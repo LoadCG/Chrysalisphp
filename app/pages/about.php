@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="/assets/images/White_Butterfly.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <link href="./output.css" rel="stylesheet">
+    <link href="../../public/css/output.css" rel="stylesheet">
     <title>Chrysalis - Sua loja preferida</title>
     <style>
         @keyframes butterfly-flying {
